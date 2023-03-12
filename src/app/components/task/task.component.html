@@ -1,0 +1,6 @@
+<app-add-task (addTaskEvent)="onAddTask($event)"></app-add-task>
+<div class="item">
+    <app-task-item *ngFor="let task of data" [task]="task" (onDeleteTask)="deleteTask(task)" 
+    (onDoubleClick)="onToggle(task)"></app-task-item>
+
+</div>
